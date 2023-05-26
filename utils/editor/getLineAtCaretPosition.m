@@ -1,4 +1,4 @@
-function [lineAtCaret,i1,i2] = getLineAtCaretPosition()
+    function [lineAtCaret,i1,i2] = getLineAtCaretPosition()
 % Get a word at the current editor caret positon.
 %
 lineAtCaret = '';
@@ -7,7 +7,12 @@ i2 = [];
 
 activeEditor = getActiveEditor();
 if ~isempty(activeEditor)
-    caretPosition = activeEditor.JavaEditor.getCaretPosition;
+    if verLessThan('matlab', '9.11.0')
+      caretPosition = activeEditor.JavaEditor.getCaretPosition;
+    else
+      caretPosition = matlab.desktop.editor.positionInLineToIndex(activeEditor, activeEditor.Selection(1), activeEditor.Selection(2)) - 1;
+    end
+    
     text = activeEditor.Text;
     
     if isempty(text)

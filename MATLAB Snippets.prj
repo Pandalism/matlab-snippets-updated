@@ -1,8 +1,8 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="1438619341" file="C:\work\repo\github\snippets\MATLAB Snippets.prj" location="C:\work\repo\github\snippets" name="MATLAB Snippets" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="2796522710" file="C:\Models\matlab-snippets-updated\MATLAB Snippets.prj" location="C:\Models\matlab-snippets-updated" name="MATLAB Snippets" target="target.mlapps" target-name="Package App">
     <param.appname>MATLAB Snippets</param.appname>
-    <param.authnamewatermark>Pavel Trnka</param.authnamewatermark>
-    <param.email>pavel@trnka.name</param.email>
+    <param.authnamewatermark>Pandalism</param.authnamewatermark>
+    <param.email>contact@pandalism.me</param.email>
     <param.company />
     <param.icon>${PROJECT_ROOT}\MATLAB Snippets_resources\icon_24.png</param.icon>
     <param.icons>
@@ -90,18 +90,18 @@ Snippets definition uses syntax compatible with &lt;a href="https://code.visuals
     </fileset.resources>
     <fileset.package />
     <build-deliverables>
-      <file location="C:\work\repo\github" name="snippets" optional="false">C:\work\repo\github\snippets</file>
+      <file location="C:\Models" name="matlab-snippets-updated" optional="false">C:\Models\matlab-snippets-updated</file>
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>C:\Program Files\MATLAB\R2019b</root>
+      <root>C:\Program Files\MATLAB\R2021b</root>
       <toolboxes>
-        <toolbox name="neuralnetwork" />
+        <toolbox name="matlabcoder" />
       </toolboxes>
       <toolbox>
-        <neuralnetwork>
+        <matlabcoder>
           <enabled>true</enabled>
-        </neuralnetwork>
+        </matlabcoder>
       </toolbox>
     </matlab>
     <platform>
