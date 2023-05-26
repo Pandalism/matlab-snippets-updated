@@ -57,9 +57,11 @@ You can select these snippet preview modes:
 ![](html/previewModes.png)
 
 ## Undocumented Matlab Functions
-Some features were possible only by using undocumented Matlab functions that may change or break in future Matlab releases. The App was tested in Matlab R2016a and R2018b.
+Some features were possible only by using undocumented Matlab functions that may change or break in future Matlab releases. The App was tested in Matlab R2016a, R2018b, R2021b and R2023a.
 
 ## Acknowledgement
+This is all really trnkap's work in https://github.com/trnkap/matlab-snippets from which this repo is forked. All I did was updated some lines of code which were pointed out by the user 'gloo' in the matlab file exchange](https://uk.mathworks.com/matlabcentral/discussions/fx-comments/ref/90d1927f-ebcd-419f-bb48-52590267fc4d?embed=true#).
+
 Inspired by the ["Insert a piece of code (a snippet) in the Matlab editor"](https://www.mathworks.com/matlabcentral/fileexchange/41704-insert-a-piece-of-code-a-snippet-in-the-matlab-editor).
 
 Inspired by the ["MATLAB for Visual Studio Code"](https://marketplace.visualstudio.com/items?itemName=Gimly81.matlab).
